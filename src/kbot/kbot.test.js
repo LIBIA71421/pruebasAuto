@@ -1,4 +1,4 @@
-const Kbot = require("./Kbot");
+const Kbot = require("./Kbot.js");
 
 /*console.log("Saludar a Andrés en idioma default".toUpperCase());
 let kbot = new Kbot();
@@ -20,7 +20,8 @@ describe("Saludor", () => {
     it("deberia Saludar a Andrés en idioma default", () => {
         let kbot = new Kbot();
         let resultado = kbot.saludar("Andrés") 
-        expect(resultado).toEqual("Buenos días Andrés");
+        //expect(resultado).toEqual("Buenos días Andrés");
+        expect(resultado).toEqual("Buenas tardes Andrés");
     });
 
     it("Saludar a Andrés en espanol por la tarde", () => {

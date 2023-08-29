@@ -16,6 +16,7 @@ module.exports = class KBot {
   saludar(nombre, hora = new Date().getHours() ) {
     let mensaje;
     //let hora = new Date().getHours();
+    //hora = new Date().getHours();
 
     switch (true) {
       case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].includes(hora):
