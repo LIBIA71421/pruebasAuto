@@ -1,9 +1,6 @@
 const Kbot = require("./Kbot.js");
 
-/*console.log("Saludar a Andrés en idioma default".toUpperCase());
-let kbot = new Kbot();
-console.log(kbot.saludar("Andrés") == "Buenos días Andrés");
-
+/*
 kbot = new Kbot("EN");
 console.log("Saludar a Andrés en ingles".toUpperCase());
 console.log(kbot.saludar("Andrés") == "Good morning Andrés");
@@ -21,7 +18,7 @@ describe("Saludor", () => {
         let kbot = new Kbot();
         let resultado = kbot.saludar("Andrés") 
         //expect(resultado).toEqual("Buenos días Andrés");
-        expect(resultado).toEqual("Buenas tardes Andrés");
+        expect(resultado).toEqual("Buenas noches Andrés");
     });
 
     it("Saludar a Andrés en espanol por la tarde", () => {
@@ -29,7 +26,14 @@ describe("Saludor", () => {
         let resultado = kbot.saludar("Andrés", 14)
         expect(resultado).toEqual("Buenas tardes Andrés");
     });
-
+/////////////////////////////////////////////////////////////////////////
+    console.log("Saludar a Andrés en idioma default xd".toUpperCase());
+    let kbot = new Kbot();
+    console.log(kbot.saludar("Andrés") == "Buenos días Andrés");
+    it("Saludar a Andrés en idioma default", () => {
+        let kbot = new Kbot("ES");
+        let resultado = kbot.saludar("Andrés", 8)
+        expect(resultado).toEqual("Buenos días Andrés");
+    });
     
   });
-  
